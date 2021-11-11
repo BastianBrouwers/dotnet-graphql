@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "417961ff-55c7-4ff2-ace2-5f9a473c49ff": {
+      "ProjectGuid": "417961ff-55c7-4ff2-ace2-5f9a473c49ff",
+      "DisplayName": "dotnet-graphql",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 1
+}
