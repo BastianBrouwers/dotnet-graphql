@@ -7,7 +7,7 @@ namespace dotnetgraphql.todos
         public TodoType()
         {
             Name = "Todo";
-            Description = "Fields of model Todo";
+            Description = "Model";
             Field(todo => todo.Id, nullable: false).Description("Id of the Todo");
             Field(todo => todo.UserId, nullable: true).Description("UserId");
             Field(todo => todo.Title, nullable: true).Description("Title of the Todo");
