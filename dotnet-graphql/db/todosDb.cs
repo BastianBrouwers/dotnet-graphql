@@ -1,4 +1,5 @@
 ﻿using dotnetgraphql.todos;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -15,6 +16,14 @@ namespace dotnetgraphql.db
             todos.Add(new Todo { Id = 3, Completed = false, Title = "A fourth end", UserId = 3 });
             todos.Add(new Todo { Id = 4, Completed = false, Title = "A fifth end", UserId = 3 });
             todos.Add(new Todo { Id = 5, Completed = false, Title = "A sixth end", UserId = 3 });
+        }
+
+        public Todo Save(Todo todo)
+        {
+            Random rnd = new();
+            todo.Id = rnd.Next(0, 100000);
+            this.todos.Add(todo);
+            return todo;
         }
 
         public List<Todo> GetTodos()

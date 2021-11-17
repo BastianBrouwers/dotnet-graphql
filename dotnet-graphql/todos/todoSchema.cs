@@ -9,7 +9,7 @@ namespace dotnetgraphql.todos
         public TodosSchema(IServiceProvider serviceProvider) : base(serviceProvider)
         {
             Query = serviceProvider.GetRequiredService<TodosQuery>();
-                
+            Mutation = serviceProvider.GetRequiredService<TodosMutation>();
         }
     }
 }
